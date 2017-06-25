@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: BuildConfig
+metadata:
+  name: cloudapps-pipeline
+  namespace: cicd
+  selfLink: /oapi/v1/namespaces/cicd/buildconfigs/cloudapps-pipeline
+  creationTimestamp: null 
+  labels:
+    app: cloudapps-pipeline
+spec:
+  triggers: []
+  runPolicy: Serial
+  source:
+    type: Git
+    git:
+      uri: 'http://git/developer/spring-boot-ex.git'
+      ref: master
+  strategy:
+    type: JenkinsPipeline
+    jenkinsPipelineStrategy:
+      jenkinsfilePath: Jenkinsfile
+  output: {}
+  resources: {}
+  postCommit: {}
+  nodeSelector: null
