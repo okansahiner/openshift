@@ -1,1 +1,1 @@
-# openshift
+# Openshift S2I pipeline examples
