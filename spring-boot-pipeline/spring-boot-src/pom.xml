@@ -60,13 +60,13 @@
         <repositories>
                 <repository>
                         <id>spring-releases</id>
-                        <url>http://192.168.30.14/repository/spring/</url>
+                        <url>http://nexus:8080/repository/spring/</url>
                 </repository>
         </repositories>
         <pluginRepositories>
                 <pluginRepository>
                         <id>spring-releases</id>
-                        <url>http://192.168.30.14/repository/spring/</url>
+                        <url>http://nexus:8080/repository/spring/</url>
                 </pluginRepository>
         </pluginRepositories>
 
